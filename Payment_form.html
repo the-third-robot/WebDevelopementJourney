@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Payment Form</title>
+    </head>
+    
+    <body>
+        
+        <!-- All The attributes of Web Form are here -->
+        <form action="">
+            
+            
+            <h2>PAYMENT FORM FOR WEB DEVELOPMENT COURSE: </h2>
+            
+            <h3>CONTACT INFORMATION: </h3>
+            
+            <p>Mandatory Fields are marked with *</p>
+        <!--  name = "name" attribute is important to sent the information to server. -->            
+            
+            
+            <p>NAME: *<input type = "text" name = "name" required> </p>
+            
+            
+            <fieldset>
+                <legend>GENDER  *</legend>
+                <p>
+                Male <input type = "radio" name = "gender" id = "Male" required>
+                Female <input type = "radio" name = "gender" id = "emale" required>
+                Trans <input type = "radio" name = "gender" id = "Trans" required>
+                </p>           
+            </fieldset>
+            
+            <p>ADDRESS: <textarea name = "Address" id = "Address" cols = "50" rows = "5" > </textarea></p>
+            
+            <p>Email: *<input type = "email" name="Email" id = "Email" required></p>
+            
+            <p>PIN CODE: *<input type = "number" name = "pnumber" id = "pnumber" required></p>
+            <hr>
+            
+            <h3>PAYMENT DETAILS: </h3>
+            
+            <p>CARD TYPE: 
+                <select name = "Card_Type" id = "Card_Type">
+                    <option value="">--Select Card-Type --</option>
+                    <option value="rupay">Rupay</option>
+                    <option value="mastercard">Master Card</option>
+                    <option value="visa">VISA</option>
+                </select>
+            </p>
+            
+            <p>CARDHOLDER's NAME: *<input type = "text" name = card_holder required></p>
+            
+            <p>CARD NUMBER: *<input type = "number" name = "card_number" id = "card_number" required></p>
+            
+            <p>EXP. DATE: *<input type = "date" name = "exp_date" id = "exp_date" required></p>
+            
+            <p>CVV NUMBER: *<input type = "password" name = "cvv" id = "cvv" required></p>
+            
+            <!--Buttons-->
+            <input type = "submit" value = "Pay Now">
+            <input type = "reset" value = "Reset">
+        </form>
+    </body>
+</html>
